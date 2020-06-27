@@ -1,4 +1,4 @@
-/* lato-regular - latin */
+svg/* lato-regular - latin */
 @font-face {
     font-family: 'Lato';
     font-style: normal;
@@ -472,7 +472,7 @@ img {
      line-height: 24px;
      color: #FFFFFF;
      padding-right: 20px;
-     background: url(/img/heart-icon.svg) no-repeat right;
+     background: url(/img/svg/heart-icon.svg) no-repeat right;
      margin-right: 14px;
 }
 .top__card-comments {
@@ -481,7 +481,7 @@ img {
      line-height: 24px;
      color: #FFFFFF;
      padding-right: 23px;
-     background: url(/img/comment-icon.svg) no-repeat right;
+     background: url(/img/svg/comment-icon.svg) no-repeat right;
 }
 .top__card-desc {
      font-size: 16px;
@@ -614,22 +614,6 @@ img {
      .top__cards_down {
           margin: 0 5px;
      }
-     .places__card_size_lg:first-child {
-          width: 100%;
-     }
-     .places__card-pic_lg {
-          width: 100%;
-     }
-     .places__card_size_sm {
-          width: 100%;
-     }
-     .places__cards_up {
-          display: block;
-          width: 100%;
-     }
-     .places__card-pic_lg {
-          width: 100%;
-     }
 }
 
 @media screen and (max-width: 767px) {
@@ -685,4 +669,165 @@ img {
      .header__nav-close-line:last-child {
           transform: translateY(-50%) rotate(-45deg);
      }
+     .places__cards_up {
+          display: block;
+     }
+     .places__card {
+          margin-bottom: 5px;
+     }
+     .places__card:last-child {
+          margin-bottom: 0;
+     }
+     .places__card_size_lg {
+          min-width: 100%;
+     }
+     .places__cards_down {
+          display: block;
+     }
+     .places__card_size_sm {
+          min-width: 100%;
+     }
+     
+     .search-form_field {
+          width: 100%;
+          margin-right: 0;
+          padding-bottom: 12px;
+          background: url(../img/svg/circle_icon.svg) no-repeat left 0;
+     }
+     .search-form_field::placeholder {
+          font-size: 16px;
+     }
+     .search-form_submit {
+          width: 100%;
+     }
+      .header__wrapper {
+           padding-top: 28px;
+      }
+      .intro_subtitle {
+           font-size: 14px;
+      }
+      .intro_title {
+           font-size: 30px;
+           line-height: 48px;
+      }
+
+}
+@media screen and (max-width: 500px) {
+     .header__nav {
+          padding: 75px 30px;
+     }
+     .benefits__cards {
+          width: 100%;
+          padding-left: 5px;
+          padding-right: 5px;
+          display: block;
+     }
+     .benefits__card {
+          margin-right: 0;
+          margin-bottom: 10px;
+          min-width: 100%;
+      }
+      .benefits__card:last-child {
+          margin-bottom: 0;
+      }
+      .intro {
+          padding-top: 125px;
+          padding-bottom: 140px;
+     }
+     .benefits {
+          padding-bottom: 36px;
+      }
+      .benefits__cards {
+          padding: 10px 10px 12px 10px;
+      }
+      .places__caption {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 36px;
+      }
+      .section-title::after {
+          width: 78px;
+      }
+      .section-title {
+          margin-bottom: 25px;
+      }
+      .places__card_size_lg, .places__card_size_sm {
+          height: 250px;
+      }
+      .places {
+           margin-bottom: 76px;
+      }
+      .tours {
+          margin-bottom: 65px;
+      }
+      .tours__tour {
+          display: block;
+      }
+      .tour__pic {
+          margin-right: 0;
+      }
+      .tour__thumb {
+          height: 314px;
+      }
+      .tour__info {
+          margin-top: 13px;
+          min-height: 100%;
+      }
+      .tour__title {
+          font-size: 30px;
+          margin-bottom: 30px;
+      }
+     .tour__desc {
+          font-size: 16px;
+          margin-bottom: 25px;
+      }
+      .tours__tour_down {
+          display: flex;
+          flex-direction: column-reverse;
+      }
+      .tour__info_down {
+          margin-right: 0;
+          margin-top: 13px;
+
+      }
+      .tour__info_down {
+          min-height: 100%;
+          margin-right: 0;
+      }
+      .top {
+          margin-bottom: 76px;
+      }
+      .top__cards {
+          display: block;
+      }
+      .top__card {
+          margin-right: 0;
+          min-width: 100%;
+          margin-bottom: 20px;
+      }
+      .top__card:last-child {
+           margin-bottom: 0;
+      }
+      .top__cards_up {
+          margin-bottom: 20px;
+      }
+      .top__card-pic {
+          min-width: 100%;
+          margin-bottom: 25px;
+      }
+      .top__card-thumb {
+          width: 100%;
+      }
+      .footer {
+        padding: 50px 0;
+      }
+      .footer__logo {
+           width: 100%;
+           margin-bottom: 12px;
+      }
+      .footer__nav {
+           width: 100%;
+      }
 }
